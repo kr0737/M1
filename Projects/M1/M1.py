@@ -1,14 +1,13 @@
 import pandas as pd 
 import os
 
-
 #Variables
 PROJ = 'M1'
 doc = 'impurities_24-1.csv'
 categories = ['Day', 'Filtration', 'Surfactant', 'Sonication'] #Independent
 response = 'response' #Dependent
 
-#Dirs
+#Dirs =? 
 cwd = os.getcwd()
 print(cwd)
 cwd = cwd.replace("\\", "/")
@@ -25,5 +24,3 @@ for fold in folds:
 fil = projdir + doc 
 df = pd.read_csv(fil, sep="\t")
 print(df)
-
-
