@@ -2,14 +2,14 @@ import pandas as pd
 import os
 
 #Variables
-PROJ = 'M1'
+PROJ = 'M1 Task Test 2'
 doc = 'impurities_24-1.csv'
 categories = ['Day', 'Filtration', 'Surfactant', 'Sonication'] #Independent
 response = 'response' #Dependent
 
 #Dirs =? 
 cwd = os.getcwd()
-print(cwd)
+print("Current cwd:", cwd)
 cwd = cwd.replace("\\", "/")
 projdir = cwd + '/Projects/' + PROJ + '/'
 resultsdir = projdir + 'ANOVA/'
